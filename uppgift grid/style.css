@@ -1,0 +1,36 @@
+html, body{ height: 100%; margin: 0; padding: 0; }
+
+.header { 
+    grid-area: header;
+background-color: red;
+}
+.left {
+    grid-area: main;
+background-color: black;
+}
+.right {
+    grid-area: side;
+background-color: black;
+color:white;
+
+}
+.footer { 
+    grid-area: footer;
+    background-color:red ;
+}
+
+.container {
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 8fr 4fr 1fr; 
+    grid-template-areas: 
+    "header header header header"
+    ". main side ."
+    "footer footer footer footer";
+}
+
+h1{
+    font-size: 60px;
+    background-color: red;
+}
